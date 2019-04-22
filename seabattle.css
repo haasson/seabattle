@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.field {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightblue;
+    border: 2px solid blue;
+}
+
+.excel {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border: 1px solid lightgray;
+}
+
+.score-board {
+    width: 20%;
+    margin: auto;
+}
+
+.score {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin: auto;
+    text-align: center;
+ 
+}
+
+.sub-score {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(46, 46, 46);
+}
+
+.ship {
+    background-color: rgb(84, 79, 102);
+    transition: 0.3s;
+}
+
+.highlight {
+    background-color: rgb(53, 151, 53);
+}
+
+.highlight-red {
+    background-color: rgb(179, 73, 59);
+}
+
+.hide {
+    background-color: transparent;
+}
+
+.miss {
+    background: transparent url('miss.png') no-repeat center;
+    background-size: contain;
+}
+
+.dark{
+    background-color: rgb(160, 208, 224);
+}
+
+.hit {
+    background: url('fire.png') no-repeat center;
+    background-size: contain;
+    background-color: rgb(84, 79, 102);
+    transform: scale(0);
+    transition: 0.3s;
+    transform: scale(1)
+}
+
+
+
+.win {
+    background-color: rgb(79, 206, 85);
+    transition: 1s;
+}
+
+.lose {
+    background-color: rgb(165, 80, 54);
+    transition: 1s;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 70px;
+    font-size: 18px;    
+    background-color: rgb(153, 211, 221);
+    border: 2px solid rgb(101, 102, 99);
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: rgb(114, 185, 197);
+}
